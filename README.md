@@ -1,5 +1,7 @@
-# Vue 3 + Vite
+# Anisaki Street Food
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Restaurant fictici: identitat japonesa urbana, carta i combos. Vue 3 + Vite, sense Tailwind ni Flowbite. Cada pàgina agrupa template, script i CSS; estils comuns a App.vue.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+`npm install`, `npm run dev`, `npm run build`.
+
+Carta i preus conservats del projecte original, català unificat. Formulari de reserva exclusivament demostratiu, sense enviament ni dades personals. Imatges editorials generades per al projecte.

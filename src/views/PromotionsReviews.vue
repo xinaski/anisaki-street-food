@@ -1,384 +1,186 @@
+<script setup>
+const combos = [
+  [
+    "Express",
+    "9,90 €",
+    "gyoza",
+    "Per quan la gana no espera.",
+    [
+      "Gyoza, edamame o korokke",
+      "Yakisoba, gyudon o okonomiyaki",
+      "Aigua o refresc",
+    ],
+  ],
+  [
+    "Ramen lovers",
+    "13,90 €",
+    "ramen",
+    "Un bon bol i que el món esperi.",
+    ["Takoyaki o yakitori", "Tonkotsu, shoyu o miso picant", "Aigua o refresc"],
+  ],
+  [
+    "Street food",
+    "15,90 €",
+    "karaage",
+    "Avui ho volem tot.",
+    [
+      "Gyoza o edamame",
+      "Katsudon, tonkatsu o karaage",
+      "Mochi o dorayaki · Aigua o refresc",
+    ],
+  ],
+  [
+    "Doble Anisaki",
+    "29,90 €",
+    "gyoza",
+    "Dos persones. Una bona decisió.",
+    [
+      "Dos entrants: takoyaki o yakitori",
+      "Dos plats: katsudon, tonkatsu o karaage",
+      "Un postre per compartir i dues begudes",
+    ],
+  ],
+  [
+    "Anisaki deluxe",
+    "19,90 €",
+    "ramen",
+    "La gana també té dies de festa.",
+    [
+      "Dos entrants: ebi tempura o yakitori",
+      "Unagidon, ramen especial o wafu burger",
+      "Mochi o dorayaki · Una beguda",
+    ],
+  ],
+  [
+    "Combo Anisaki",
+    "12,90 €",
+    "karaage",
+    "Una mica de tot. Molt de sabor.",
+    [
+      "Takoyaki, gyoza o edamame",
+      "Unagidon, ramen especial o wafu burger",
+      "Una beguda",
+    ],
+  ],
+];
+</script>
 <template>
-
-  <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
-    <h2 class="pb-6 max-w-lg font-sans text-5xl font-bold tracking-tight text-red-600 sm:text-7xl sm:leading-none">
-      プロモーション
-    </h2>
-    <div class="flex flex-col lg:flex-row lg:items-end">
-      <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
-        <h2 class="max-w-lg font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl sm:leading-none">
-          Promocions Especials
-        </h2>
-        
-      </div>
-      <div class="lg:w-1/2">
-        <p class="text-base text-red-900 md:text-xl">
-          Gaudeix de plats autèntics i menús especials dissenyats per a tots els gustos. Menja bé, menja japonès!
-        </p>
-      </div>
+  <section class="wrap">
+    <div class="page-head">
+      <p class="eyebrow">ELS COMBOS</p>
+      <h1>Junta plats.<br /><span class="red">Multiplica gana.</span></h1>
+      <p>
+        Sis maneres d’encertar-la. Promocions de dilluns a divendres, excepte
+        festius.
+      </p>
     </div>
-  </div>
-
-  <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div class="grid max-w-screen-xl gap-8 row-gap-6 sm:mx-auto lg:grid-cols-3">
-
-      <div class="max-w-sm bg-white border border-gray-200 shadow">
-        <img class="" src="/menu/menu1.jpeg" alt="" />
-        <div class="p-5">
-          <div class="flex justify-between items-start">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              MENÚ EXPRESS
-            </h5>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              9,90€
-            </h5>
-          </div>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Ideal per a un àpat ràpid i deliciós!
-          </p>
-          <ul class="space-y-2">
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 entrant a escollir</p>
-                <p class="text-sm">Gyoza, Edamame o Korokke</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 plat principal a escollir</p>
-                <p class="text-sm">Yakisoba, Gyudon o Okonomiyaki</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">Beguda inclosa</p>
-                <p class="text-sm">Aigua, refresc o cervesa japonesa +1€</p>
-              </div>
-            </li>
-          </ul>
+    <div class="combos">
+      <article v-for="(c, i) in combos" :key="c[0]">
+        <div class="photo">
+          <img
+            :src="'/editorial/' + c[2] + '.webp'"
+            :alt="'Plat representatiu del combo ' + c[0]"
+            loading="lazy"
+          /><span class="tag">COMBO 0{{ i + 1 }}</span>
         </div>
-      </div>
-      <div class="max-w-sm bg-white border border-gray-200 shadow">
-        <img class="" src="/menu/menu2.jpeg" alt="" />
-        <div class="p-5">
-          <div class="flex justify-between items-start">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              MENÚ RAMEN LOVERS
-            </h5>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              13,90
-            </h5>
+        <div class="combo-body">
+          <div class="combo-title">
+            <h2>{{ c[0] }}</h2>
+            <strong>{{ c[1] }}</strong>
           </div>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Per als amants del ramen!
-          </p>
-          <ul class="space-y-2">
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 entrant a escollir</p>
-                <p class="text-sm">Takoyaki o Yakitori</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 ramen a escollir</p>
-                <p class="text-sm">Tonkotsu, Shoyu o Miso Picant</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">Beguda inclosa</p>
-                <p class="text-sm">Aigua, refresc o cervesa japonesa +1€</p>
-              </div>
-            </li>
+          <p>{{ c[3] }}</p>
+          <ul>
+            <li v-for="s in c[4]" :key="s">{{ s }}</li>
           </ul>
+          <RouterLink to="/contact">Vine a tastar-lo ↗</RouterLink>
         </div>
-      </div>
-      <div class="max-w-sm bg-white border border-gray-200 shadow">
-        <img class="" src="/menu/menu3.jpeg" alt="" />
-        <div class="p-5">
-          <div class="flex justify-between items-start">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              MENÚ STREET FOOD
-            </h5>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              15,90€
-            </h5>
-          </div>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            L’experiència definitiva del menjar de carrer japonès!
-          </p>
-          <ul class="space-y-2">
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 entrant a escollir</p>
-                <p class="text-sm">Gyoza o Edamame</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 plat principal a escollir</p>
-                <p class="text-sm">Katsudon, Tonkatsu o Chicken Karaage</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 postre a escollir</p>
-                <p class="text-sm">Mochi o Dorayaki</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">Beguda inclosa</p>
-                <p class="text-sm">Aigua, refresc o cervesa japonesa +1€</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="max-w-sm bg-white border border-gray-200 shadow">
-        <img class="" src="/menu/menu4.jpeg" alt="" />
-        <div class="p-5">
-          <div class="flex justify-between items-start">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              MENÚ DOBLE ANISAKI <i> 2 persones</i>
-            </h5>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              29,90€
-            </h5>
-          </div>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            L’experiència definitiva del menjar de carrer japonès!
-          </p>
-          <ul class="space-y-2">
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">2 entrants a escollir</p>
-                <p class="text-sm">Takoyaki o Yakitori</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">2 plats principals escollir</p>
-                <p class="text-sm">Katsudon, Tonkatsu o Chicken Karaage</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 postre a escollir</p>
-                <p class="text-sm">Mochi o Dorayaki</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">2 Begudes incloses</p>
-                <p class="text-sm">Aigua, refresc o cervesa japonesa +1€</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="max-w-sm bg-white border border-gray-200 shadow">
-        <img class="" src="/menu/menu5.jpeg" alt="" />
-        <div class="p-5">
-          <div class="flex justify-between items-start">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              MENÚ ANISAKI DELUXE 
-            </h5>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              19,90€
-            </h5>
-          </div>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            El millor del nostre street food amb un toc gourmet!
-          </p>
-          <ul class="space-y-2">
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">2 entrants premium</p>
-                <p class="text-sm">Ebi Tempura o Yakitori</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 plat principal escollir</p>
-                <p class="text-sm">Unagidon, Ramen Especial o Wafu Burger</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 postre a escollir</p>
-                <p class="text-sm">Mochi o Dorayaki</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 Beguda</p>
-                <p class="text-sm">Aigua, refresc o cervesa japonesa +1€</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="max-w-sm bg-white border border-gray-200 shadow">
-        <img class="" src="/menu/menu5.jpeg" alt="" />
-        <div class="p-5">
-          <div class="flex justify-between items-start">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              MENÚ COMBO ANISAKI  
-            </h5>
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-              12,90€
-            </h5>
-          </div>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Per provar una mica de tot!
-          </p>
-          <ul class="space-y-2">
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 entrant a escollir</p>
-                <p class="text-sm">Takoyaki, Gyoza o Edamame</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 plat principal escollir</p>
-                <p class="text-sm">Unagidon, Ramen Especial o Wafu Burger</p>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <span class="mr-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4 text-red-500">
-                  <path d="m11.645 20.91-.007-.003-.022-.012a15.247 15.247 0 0 1-.383-.218 25.18 25.18 0 0 1-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0 1 12 5.052 5.5 5.5 0 0 1 16.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 0 1-4.244 3.17 15.247 15.247 0 0 1-.383.219l-.022.012-.007.004-.003.001a.752.752 0 0 1-.704 0l-.003-.001Z" />
-                </svg>
-              </span>
-              <div class="space-y-0">
-                <p class="text-sm font-bold leading-3">1 Beguda</p>
-                <p class="text-sm">Aigua, refresc o cervesa japonesa +1€</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </article>
     </div>
-  </div>
-
-  <div class="px-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-md md:px-24 lg:px-8 lg:pb-20">
-    <div class="flex flex-col lg:flex-row lg:items-end">
-      <div class="lg:mb-0 lg:w-1/2 lg:pr-5">
-        <img src="/promotion/img-promotion.svg" class="w-2/3 lg:w-full mx-auto"/>
-      </div>
-      <div class="lg:w-1/2">
-        <p class="pb-2 text-red-950 text-3xl font-extrabold text-center lg:text-left">
-          Promocions disponibles de dilluns a divendres (excepte festius).
-        </p>
-        <p class="text-red-950 text-2xl font-extrabold text-center lg:text-left">
-          Gaudeix de la millor experiència japonesa a un preu irresistible!
-        </p>
-      </div>
-    </div>
-  </div>
-
+    <p class="demo-note">
+      Fotografies representatives dels plats. Cervesa japonesa: suplement d’1 €.
+      Restaurant fictici.
+    </p>
+  </section>
 </template>
-  
+<style scoped>
+.page-head h1 {
+  font-size: clamp(60px, 8vw, 115px);
+}
+.combos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 10px 0 40px;
+}
+.combos article {
+  border: 2px solid;
+  background: #fffaf0;
+  display: flex;
+  flex-direction: column;
+}
+.photo {
+  position: relative;
+  border-bottom: 2px solid;
+}
+.photo img {
+  width: 100%;
+  aspect-ratio: 1.2;
+  object-fit: cover;
+}
+.photo .tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  transform: rotate(-6deg);
+}
+.combo-body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.combo-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+.combo-title h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+}
+.combo-title strong {
+  white-space: nowrap;
+  font-size: 18px;
+  color: #da3033;
+}
+.combo-body > p {
+  font-size: 13px;
+}
+.combo-body ul {
+  padding-left: 17px;
+  font-size: 13px;
+  line-height: 1.7;
+  flex: 1;
+}
+.combo-body > a {
+  border-top: 1px solid;
+  padding-top: 17px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.demo-note {
+  padding-bottom: 50px;
+}
+@media (max-width: 1000px) {
+  .combos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .combos {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
