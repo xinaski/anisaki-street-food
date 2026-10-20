@@ -56,6 +56,12 @@ watch(
 </template>
 <style>
 @font-face {
+  font-family: AnisakiSquare;
+  src: url("/fonts/zen-dots-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
   font-family: AnisakiDisplay;
   src: url("/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2");
   font-weight: 700;
@@ -95,10 +101,11 @@ p {
 h1,
 h2,
 h3 {
-  font-family: AnisakiDisplay, "Arial Narrow", sans-serif;
+  font-family: AnisakiSquare, sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
-  line-height: 0.94;
-  letter-spacing: -0.025em;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
 }
 h1 {
   font-size: clamp(65px, 9vw, 130px);
@@ -171,15 +178,16 @@ select:focus-visible {
   gap: 20px;
   font-size: 13px;
   font-weight: bold;
-  box-shadow: 4px 4px 0 #191919;
+  box-shadow: none;
+  border-radius: 0;
   transition:
     transform 0.15s,
     box-shadow 0.15s;
 }
 .btn:hover,
 .nav-cta:hover {
-  transform: translate(2px, 2px);
-  box-shadow: 2px 2px 0 #191919;
+  transform: translateY(-2px);
+  box-shadow: none;
 }
 .btn.light {
   background: #f7f2e5;
@@ -346,6 +354,61 @@ footer {
   * {
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Poster typography is deliberately distinct from the BUM display system. */
+.nav-num {
+  font-family: monospace;
+  font-size: 10px;
+  color: #e43337;
+  margin-right: 4px;
+}
+.header {
+  border-bottom: 3px double #191919;
+  background: #f7f2e5;
+}
+.topline {
+  font-family: monospace;
+  letter-spacing: 0.15em;
+}
+.page-head {
+  border-bottom: 3px double #191919;
+  margin-bottom: 30px;
+  position: relative;
+}
+.page-head h1 {
+  font-size: clamp(38px, 5.6vw, 76px) !important;
+  line-height: 1.15;
+  letter-spacing: -0.055em;
+}
+.page-head .eyebrow {
+  display: inline-block;
+  border: 1px solid;
+  padding: 9px 12px;
+  color: #e43337;
+}
+.section-heading h2 {
+  font-size: clamp(30px, 4vw, 50px);
+}
+.tag {
+  box-shadow: none;
+  border: 1px solid;
+  transform: none;
+  font-family: monospace;
+}
+.footer-top > p {
+  font-family: AnisakiSquare;
+  font-size: 24px;
+  line-height: 1.5;
+}
+@media (max-width: 750px) {
+  .page-head h1 {
+    font-size: clamp(29px, 7.3vw, 47px) !important;
+    letter-spacing: -0.055em;
+  }
+  .footer-top > p {
+    font-size: 20px;
   }
 }
 </style>

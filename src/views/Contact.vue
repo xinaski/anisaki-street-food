@@ -170,4 +170,20 @@ form .btn {
     font-size: 48px;
   }
 }
+.contact-poster {
+  transform: none;
+  box-shadow: none;
+  border: 3px double;
+}
+.reservation h2 {
+  font-size: clamp(27px, 3.3vw, 43px);
+  line-height: 1.25;
+}
+.location {
+  border-top: 3px double;
+}
+.contact-poster .tag {
+  transform: none;
+  background: #f7f2e5;
+}
 </style>

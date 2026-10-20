@@ -133,4 +133,27 @@ const beliefs = [
     gap: 30px;
   }
 }
+.story h2 {
+  font-size: clamp(25px, 3vw, 40px);
+  line-height: 1.25;
+}
+.illustration {
+  transform: none;
+  box-shadow: none;
+  border: 3px double;
+  background-image: radial-gradient(#19191945 1px, transparent 1px);
+  background-size: 7px 7px;
+  background-color: #eee5cf;
+}
+.beliefs h3 {
+  font-size: 21px;
+  line-height: 1.25;
+}
+.beliefs article {
+  border-top: 3px double;
+}
+.story-end h2 {
+  font-size: clamp(30px, 4.5vw, 60px);
+  line-height: 1.2;
+}
 </style>

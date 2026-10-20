@@ -183,4 +183,82 @@ const combos = [
     grid-template-columns: 1fr;
   }
 }
+
+.combos {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.combos article {
+  display: grid;
+  grid-template-columns: 38% 1fr;
+  border: 1px solid;
+  box-shadow: none;
+}
+.photo {
+  border-bottom: 0;
+  border-right: 1px solid;
+  overflow: hidden;
+}
+.photo img {
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+.photo .tag {
+  top: 12px;
+  left: 8px;
+  padding: 7px;
+  font-size: 9px;
+  transform: none;
+}
+.combo-body {
+  padding: 22px;
+}
+.combo-title {
+  display: block;
+  border-bottom: 1px solid;
+  padding-bottom: 14px;
+}
+.combo-title h2 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+.combo-title strong {
+  font-family: monospace;
+  font-size: 21px;
+}
+.combo-body > p {
+  font-size: 12px;
+}
+.combo-body li {
+  font-size: 12px;
+}
+@media (max-width: 850px) {
+  .combos {
+    grid-template-columns: 1fr;
+  }
+  .combo-title {
+    display: flex;
+    align-items: start;
+  }
+  .combo-title h2 {
+    max-width: 65%;
+  }
+}
+@media (max-width: 450px) {
+  .combos article {
+    grid-template-columns: 32% 1fr;
+  }
+  .combo-body {
+    padding: 17px;
+  }
+  .combo-title {
+    display: block;
+  }
+  .combo-title h2 {
+    max-width: 100%;
+    font-size: 18px;
+  }
+}
 </style>
